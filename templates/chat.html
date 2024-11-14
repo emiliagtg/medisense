@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medisense Chatbot</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container h-100">
+        <div class="row justify-content-center h-100">
+            <div class="col-md-8 col-xl-6 chat mt-5">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        <div class="d-flex align-items-center">
+                            <div class="img_cont mr-3">
+                                <img src="{{ url_for('static', filename='medisense_logo.png') }}" class="rounded-circle user_img">
+                            </div>
+                            <div class="user_info">
+                                <h6 class="mb-0">MediAI Assist</h6>
+                                <span>Ask for healthcare or first aid assistance!</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body msg_card_body" id="messageContainer">
+                        <div class="msg text-muted">Hello MediPatient! How may I help you?</div>
+                    </div>
+                    <div class="card-footer">
+                        <form id="textForm" action="" method="post">
+                            <input type="text" id="text" name="msg" placeholder="Type your message..." autocomplete="off" class="form-control type_msg" required/>
+                            <div class="input-group-append">
+                                <button type="submit" id="send" class="btn btn-primary"><i class="fas fa-paper-plane"></i></button>
+                            </div>
+                        </form>
+                        <form id="imageForm" action="" method="post" enctype="multipart/form-data">
+                            <div class="input-group">
+                                <input type="file" id="inputImage" accept="image/*" capture="environment" class="form-control" required>
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn btn-secondary">Detect Condition</button>
+                                </div>
+                            </div>
+                        </form>
+                        <div id="camera-container">
+                            <video id="video" width="640" height="480" autoplay></video>
+                            <button id="captureBtn">Capture</button>
+                            <canvas id="canvas" style="display:none;"></canvas>
+                            <img id="compressedImage" style="max-width: 300px; display:none;" />
+                        </div>
+                    
+                        <canvas id="canvas" style="display:none;"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='msg.js') }}"></script>
+</body>
+</html>
