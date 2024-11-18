@@ -6,22 +6,13 @@ body, html {
     background: linear-gradient(to right, rgb(38, 51, 61), rgb(50, 55, 65), rgb(33, 33, 78));
 }
 
-.chat-container {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.chat-box {
-    height: 400px;
+#chatBox {
+    max-height: 400px;
+    overflow-y: auto;
     padding: 10px;
-    overflow-y: scroll;
     border: 1px solid #ddd;
-    margin-bottom: 20px;
-    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
 }
 
 .card {
@@ -36,13 +27,11 @@ body, html {
     border-radius: 0 0 15px 15px !important;
 }
 
-/* Message Area */
 .msg_card_body {
     padding: 10px;
     overflow-y: auto;
 }
 
-/* Input and Send Button */
 .type_msg {
     height: 60px !important;
     color: white !important;
@@ -51,12 +40,19 @@ body, html {
     overflow-y: auto;
 }
 
-.send_btn {
-    color: white !important;
+#sendButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.3) !important;
-    border-radius: 0 15px 15px 0 !important;
 }
+
+#sendButton:hover {
+    background-color: #0056b3;
+}
+
 
 .msg_container_send, .msg_cotainer {
     padding: 10px;
@@ -74,17 +70,22 @@ body, html {
 .msg_cotainer {
     background-color: rgb(82, 172, 255);
 }
-
-.user-message, .bot-message {
-    margin-bottom: 15px;
-}
-
 .user-message {
-    text-align: right;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 5px 10px;
+    text-align: right; 
 }
 
 .bot-message {
-    text-align: left;
+    background-color: #e9ecef;
+    color: black;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 5px 10px;
+    text-align: left; 
 }
 
 .user_img, .img_cont {
