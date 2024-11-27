@@ -1,9 +1,26 @@
-
 body, html {
     height: 100%;
     margin: 0;
     font-family: 'Roboto', sans-serif;
     background: linear-gradient(to right, rgb(38, 51, 61), rgb(50, 55, 65), rgb(33, 33, 78));
+}
+
+.container {
+    height: 100%;
+}
+
+.row {
+    height: 100%;
+}
+
+.chat {
+    resize: both;
+    overflow: hidden; 
+    max-height: 100%;
+    max-width: 100%;
+    min-height: 400px; 
+    min-width: 300px;
+    flex-grow: 1;
 }
 
 #chatBox {
@@ -15,9 +32,25 @@ body, html {
     font-family: Arial, sans-serif;
 }
 
+#chatContainer {
+    width: 50%; 
+    height: 400px; 
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden; 
+    resize: both; 
+    margin: auto; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
 .card {
-    height: 500px;
     color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+    overflow: hidden;
     background-color: rgba(0, 0, 0, 0.6) !important;
     border-radius: 15px !important;
 }
@@ -25,11 +58,14 @@ body, html {
 .card-footer {
     border-top: 0 !important;
     border-radius: 0 0 15px 15px !important;
+    flex-shrink: 0;
 }
 
 .msg_card_body {
     padding: 10px;
-    overflow-y: auto;
+    background-color: #f9f9f9;
+    overflow-y: auto; 
+    flex-grow: 1;
 }
 
 .type_msg {
@@ -114,4 +150,10 @@ body, html {
 #camera-container {
     margin-top: 20px;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    .chat {
+        width: 90%; 
+    }
 }

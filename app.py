@@ -38,14 +38,14 @@ def index():
 def get_text_response():
     user_input = request.json.get("message", "").strip()
     if not user_input:
-        return jsonify({"response": "Message cannot be empty."})
+        return jsonify({"response": "Message cannot be left empty. Please ask related to healthcare/first aid."})
     
     session_id = request.remote_addr
     try:
         response_text = detect_intent_texts(dialogflow_project_id, session_id, user_input, "en")
     except Exception as e:
         print(f"Error communicating with Dialogflow: {e}")
-        response_text = "I'm sorry, I couldn't process your request."
+        response_text = "I'm sorry, I couldn't process your request. Please ask related to healthcare/first aid."
 
     return jsonify({"response": response_text})
 
@@ -53,7 +53,7 @@ def get_text_response():
 def upload_image():
     file = request.files.get("image") 
     if not file:
-        return jsonify({"response": "No image uploaded."}), 400
+        return jsonify({"response": "No image uploaded. Please upload a valid image file."}), 400
 
     try:
         image = Image.open(file.stream).convert("RGB")
@@ -202,7 +202,7 @@ def upload_image():
                 'Fibroma_Molle': "No first aid required; monitor for any changes."
             }
 
-        first_aid_response = first_aid_responses.get(condition, "No specific first aid advice available for this condition.")
+        first_aid_response = first_aid_responses.get(condition, "No specific first aid advice available for this condition. Please retake your picture to make sure it is not blurred.")
         return jsonify({"condition": condition, "first_aid": first_aid_response})
 
     except Exception as e:
