@@ -1,9 +1,9 @@
 from datasets import load_dataset
 
-# Dataset SD-198 di HF Hub
+# SD-198 Dataset on HF Hub
 dataset = load_dataset("resyhgerwshshgdfghsdfgh/SD-198", split="train")
 
-# Simpan secara lokal
+# Save locally
 dataset.save_to_disk("sd-198")
 
-print("✅ SD‑198 berhasil didownload dan disimpan di folder 'sd-198'")
+print(""✅ SD‑198 successfully downloaded and saved in 'sd-198' folder")
