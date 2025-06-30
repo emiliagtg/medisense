@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "medisensechatbot-wlsc",
+  "private_key_id": "fce172291cad9728f403d979979b2db779ee2475",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCNhYlAONTggsDK\noXFBz9mkabKF/BVXjnT3LPeePyvOovL2eBS8tX11trrC+LQNNbJz324PPy4IWzNB\n/+ZZkFdVGvdOjy4ThcwEe2jkYz38e+V/3r6XI+4wxvbTPVs//up5JeuLqSD5EaSe\nleX7WgA/WvpvzUvj15FcUC/YZ3pLqAVf/D+yzYT2kp4mrXa7yWsaxye963Kg4E8H\nacc3Z3SAghKL4Oxe28Zds0AXKeztOUe2Ymr3JD+Npn4h9Q/IT+rTw7R6JpAW88+r\nyxXEPXrvZPCIFPaR8lSOJix5bXRbcL92NxJclnaUyEVM3f+kbHDCt0+LE4+iOzzi\njASOOTT7AgMBAAECggEAEsoA3+rrsGcLq5tliwRKc/6oegtu1fIO62Yn9fWTHlsa\nAMkOj8NUxdUd1JbqaLqRV7r5RMLxnKBnHMMZ1RhJz/3FicOOrX7dCFdOJMxcRXI5\nlRGAolZd4FH6IS+LNuLkRHNZY3Bv9UF3ZqqmHwni8IZmq4NJKRXMscHfqE6MuRCC\nIG+a3+kvehqCzrdIPtJ/cZ29/PNIzQsV0znfTRnsYDvo+AhHpLezIHbytviqlswG\nhKWSMcIXMncP4+2ez5IUp/vcn4LNKEsYv1MhkPv9KZXYw5HpS8pSmo+RWGJDNBRH\nrz+EaV0z52Vc2ol0DwV61kU6pbeuzW4bm1g1BqAc+QKBgQDCg2wqglyCRfxEsd5n\n08AteX8Po9oqdrSeVo3tv/G+Jdg4J1tLCfOChUi9QPXK+Fp3zVtpuloGTm1ZvUw7\nPZV1aJCNM0vHyOgqa5KBuZoqOSTgQRltqTzA5TL0THGeNej6+EbouD99vs3QufT2\nZ9+91jkSpA3T5oJk6SGChSJ8NQKBgQC6Qd7OgKxX1AqCfkAoPE7YW0CD0xB+rINX\niIe/BGJWsuu5B6i9dYatWPVJ93BuWgE5/GJk2bBGWlArRzj50FgBnLsnLXN2ZDjd\no+fvoOihBE5pRCroc2LNJ173GIwLoCWI5aT4ZKcUeY5pKT9ImOslvETHgrahx6P7\ngKyMmlcybwKBgHUa6mQtV8SWneo9q8iWk3zNSNIBs7cdAGDTe19H0CLKZgJor23d\n790EoWZPVat9GfpGiGJ+7vQdA3ijnuGLkg+9hEl+OIFvU1c2rF2tgEMrZCgfCVAc\nM5duZd7upvi5PCrcjtRNGOx7ky22xuQSZYHFF1dBrZGFlbtrH+GUhc6BAoGAJNgK\n3waNEQKc4ZtfzZXAcwP6CxmhVa2CfbpAQAT5/vR9tKhTNMce0QOb4fnUf7/GJlZK\nkHCPchtDaIw6NRCFmCwMyX8wK+c/aHiX1MsbuV5EtIYLhtfsX3C+VFrCuToAssfa\njlg6xM4W4a6LGi1Ftr07TcwJnI8FXSbi+x08ynkCgYB4bY5/EAFTgBCQZsG7dNag\nkelU1ph4rC0sSOjTEtv5ulUIThT6Zv5pPgmquqtiYvO204lQ6pJFpY6PI+1YxWI+\n66u26DrvkEKD+Oryi7L2EtrTIYz7JdNPUu3ipjIcl0NfWsgxoay1+mUmPGO2wjJV\nRIMhBgZzGyhl5UPbWzXTvA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "noctchillbottle@medisensechatbot-wlsc.iam.gserviceaccount.com",
+  "client_id": "100282570576772630631",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/noctchillbottle%40medisensechatbot-wlsc.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
